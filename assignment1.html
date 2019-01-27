@@ -1,0 +1,314 @@
+<html>
+    <head>
+        <title>Marks Sheet</title>
+        <style>
+        input[type=text] {
+            width:100%;
+            padding: 10px 15px;
+            text-align: center;
+            box-sizing: border-box;
+            border: 1.2px solid hsl(59, 30%, 40%);
+            border-radius: 6px;
+            background-color: red;
+        }
+        input[type=text]:focus{
+            background-color: rgb(230, 246, 252);
+        }
+        input[type=text]:hover{
+            background-color: skyblue;
+        }
+        </style>
+        <script>
+        function Validate(obj)
+        {
+            marks = parseInt(document.getElementById(obj.id).value);  
+                if(marks<0){
+                    alert("Marks can't be negative");
+                    obj.value="";
+                }
+                else if(marks>1){
+                    alert("Maximum mark is 1");
+                obj.value="";
+                }
+        }
+        function Validate1(obj)
+        {
+            marks = parseInt(document.getElementById(obj.id).value);  
+                if(marks<0){
+                    alert("Marks can't be negative");
+                    obj.value="";
+                }
+                else if(marks>3){
+                    alert("Maximum mark is 3");
+                obj.value="";
+                }
+        }
+        function Validate2(obj)
+        {
+            marks = parseInt(document.getElementById(obj.id).value);  
+                if(marks<0){
+                    alert("Marks can't be negative");
+                    obj.value="";
+                }
+                else if(marks>30){
+                    alert("Maximum mark is 30");
+                obj.value="";
+                }
+        }
+        </script>
+    </head>
+    <body>
+        <table cellpadding="10" cellspacing="0" border="0">
+            <caption><b>INTERNAL EXAM CO ATTAINMENT</b></caption>
+            <tr style="background-color: yellow">
+                <th style="background-color: rgb(185, 182, 182)">Course Outcome</th>
+                <th>C0 1</th>
+                <th>C0 1</th>
+                <th>C0 1</th>
+                <th>C0 2</th>
+                <th>C0 2</th>
+                <th>C0 2</th>
+                <th>C0 1</th>
+                <th>C0 1</th>
+                <th>C0 2</th>
+                <th>C0 2</th>
+                <th>C0 1</th>
+                <th>C0 1</th>
+                <th>C0 2</th>
+                <th>C0 2</th>
+            </tr>
+            <tr style="background-color:pink">
+                <th style="background-color:white">Marks</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+                <th>3</th>
+                <th>3</th>
+                <th>3</th>
+                <th>3</th>
+                <th>3</th>
+                <th>3</th>
+                <th>3</th>
+                <th>3</th>
+                <th>30</th>
+            </tr>
+            <tr style="background-color:pink">
+                <th style="background-color: skyblue">50% Marks</th>
+                <th>0.5</th>
+                <th>0.5</th>
+                <th>0.5</th>
+                <th>0.5</th>
+                <th>0.5</th>
+                <th>0.5</th>
+                <th>1.5</th>
+                <th>1.5</th>
+                <th>1.5</th>
+                <th>1.5</th>
+                <th>1.5</th>
+                <th>1.5</th>
+                <th>1.5</th>
+                <th>1.5</th>
+                <th>15</th>
+            </tr>
+            <tr style="color: Red">
+                <th>H.No</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                <th>11a</th>
+                <th>11b</th>
+                <th>12a</th>
+                <th>12b</th>
+                <th>Total</th>
+            </tr>
+            <tr style="background-color: Red">
+                <td style="background-color:white">1602-16-733-061</td>
+                <td><input type="text" size="2" id="111" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="112" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="113" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="114" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="115" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="116" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="117" onblur="Validate1(this)"></td> 
+                <td><input type="text" size="2" id="118" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="119" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="120" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="121" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="122" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="123" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="124" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="125" onblur="Validate2(this)"></td>
+            </tr>
+            <tr style="background-color: Red">
+                    <td style="background-color:white">1602-16-733-062</td>
+                    <td><input type="text" size="2" id="211" onblur="Validate(this)"></td>
+                    <td><input type="text" size="2" id="212" onblur="Validate(this)"></td>
+                    <td><input type="text" size="2" id="213" onblur="Validate(this)"></td>
+                    <td><input type="text" size="2" id="214" onblur="Validate(this)"></td>
+                    <td><input type="text" size="2" id="215" onblur="Validate(this)"></td>
+                    <td><input type="text" size="2" id="216" onblur="Validate(this)"></td>
+                    <td><input type="text" size="2" id="217" onblur="Validate1(this)"></td> 
+                    <td><input type="text" size="2" id="218" onblur="Validate1(this)"></td>
+                    <td><input type="text" size="2" id="219" onblur="Validate1(this)"></td>
+                    <td><input type="text" size="2" id="220" onblur="Validate1(this)"></td>
+                    <td><input type="text" size="2" id="221" onblur="Validate1(this)"></td>
+                    <td><input type="text" size="2" id="222" onblur="Validate1(this)"></td>
+                    <td><input type="text" size="2" id="223" onblur="Validate1(this)"></td>
+                    <td><input type="text" size="2" id="224" onblur="Validate1(this)"></td>
+                    <td><input type="text" size="2" id="225" onblur="Validate2(this)"></td>
+            </tr>
+            <tr style="background-color: Red">
+                    <td style="background-color:white">1602-16-733-063</td>
+                    <td><input type="text" size="2" id="311" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="312" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="313" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="314" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="315" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="316" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="317" onblur="Validate1(this)"></td> 
+                <td><input type="text" size="2" id="318" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="319" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="320" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="321" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="322" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="323" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="324" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="325" onblur="Validate2(this)"></td>
+            </tr>
+            <tr style="background-color: Red">
+                    <td style="background-color:white">1602-16-733-064</td>
+                    <td><input type="text" size="2" id="411" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="412" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="413" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="414" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="415" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="416" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="417" onblur="Validate1(this)"></td> 
+                <td><input type="text" size="2" id="418" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="419" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="420" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="421" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="422" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="423" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="424" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="425" onblur="Validate2(this)"></td>
+                </tr> <tr style="background-color: Red">
+                        <td style="background-color:white">1602-16-733-065</td>
+                        <td><input type="text" size="2" id="511" onblur="Validate(this)"></td>
+                        <td><input type="text" size="2" id="512" onblur="Validate(this)"></td>
+                        <td><input type="text" size="2" id="513" onblur="Validate(this)"></td>
+                        <td><input type="text" size="2" id="514" onblur="Validate(this)"></td>
+                        <td><input type="text" size="2" id="515" onblur="Validate(this)"></td>
+                        <td><input type="text" size="2" id="516" onblur="Validate(this)"></td>
+                        <td><input type="text" size="2" id="517" onblur="Validate1(this)"></td> 
+                        <td><input type="text" size="2" id="518" onblur="Validate1(this)"></td>
+                        <td><input type="text" size="2" id="519" onblur="Validate1(this)"></td>
+                        <td><input type="text" size="2" id="520" onblur="Validate1(this)"></td>
+                        <td><input type="text" size="2" id="521" onblur="Validate1(this)"></td>
+                        <td><input type="text" size="2" id="522" onblur="Validate1(this)"></td>
+                        <td><input type="text" size="2" id="523" onblur="Validate1(this)"></td>
+                        <td><input type="text" size="2" id="524" onblur="Validate1(this)"></td>
+                        <td><input type="text" size="2" id="525" onblur="Validate2(this)"></td>
+                    <tr style="background-color: Red">
+                            <td style="background-color:white">1602-16-733-066</td>
+                            <td><input type="text" size="2" id="611" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="612" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="613" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="614" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="615" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="616" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="617" onblur="Validate1(this)"></td> 
+                            <td><input type="text" size="2" id="618" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="619" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="620" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="621" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="622" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="623" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="624" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="625" onblur="Validate2(this)"></td>
+                    </tr>
+                    <tr style="background-color: Red">
+                            <td style="background-color:white">1602-16-733-067</td>
+                            <td><input type="text" size="2" id="711" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="712" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="713" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="714" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="715" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="716" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="717" onblur="Validate1(this)"></td> 
+                            <td><input type="text" size="2" id="718" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="719" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="720" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="721" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="722" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="723" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="724" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="725" onblur="Validate2(this)"></td>
+                    </tr>
+                    <tr style="background-color: Red">
+                            <td style="background-color:white">1602-16-733-068</td>
+                            <td><input type="text" size="2" id="811" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="812" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="813" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="814" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="815" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="816" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="817" onblur="Validate1(this)"></td> 
+                <td><input type="text" size="2" id="818" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="819" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="820" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="821" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="822" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="823" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="824" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="825" onblur="Validate2(this)"></td>
+                    </tr>
+                    <tr style="background-color: Red">
+                            <td style="background-color:white">1602-16-733-069</td>
+                            <td><input type="text" size="2" id="911" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="912" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="913" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="914" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="915" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="916" onblur="Validate(this)"></td>
+                <td><input type="text" size="2" id="917" onblur="Validate1(this)"></td> 
+                <td><input type="text" size="2" id="918" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="919" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="920" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="921" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="922" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="923" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="924" onblur="Validate1(this)"></td>
+                <td><input type="text" size="2" id="925" onblur="Validate2(this)"></td>
+                    </tr>
+                    <tr style="background-color: Red">
+                            <td style="background-color:white">1602-16-733-070</td>
+                            <td><input type="text" size="2" id="11" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="12" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="13" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="14" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="15" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="16" onblur="Validate(this)"></td>
+                            <td><input type="text" size="2" id="17" onblur="Validate1(this)"></td> 
+                            <td><input type="text" size="2" id="18" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="19" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="20" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="21" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="22" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="23" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="24" onblur="Validate1(this)"></td>
+                            <td><input type="text" size="2" id="25" onblur="Validate2(this)"></td>
+                    </tr>
+        </table>
+    </body>
+</html>
